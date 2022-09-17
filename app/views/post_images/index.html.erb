@@ -7,8 +7,7 @@
     <%= image_tag post_image.get_image %>
   <% end %>
   
-  <p>投稿ユーザー画像：<%= image_tag 'sample-author1.jpg' %></p>
-  
+ <p>投稿ユーザー画像：<%= image_tag post_image.user.get_profile_image(100,100) %></p>
   <!--post_image変数のshop_nameカラムを表示します。 このカラムは、post_imageモデルに定義されています。-->
   <p>ショップ名：<%= post_image.shop_name %></p>
   
